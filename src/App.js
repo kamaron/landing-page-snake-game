@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SnakeGame from './SnakeGame';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <h1>Pausa creativa</h1>
+        <p className='description'>Trabajando en una versión mejorada de nuestros servicios</p>
+        <div className="game">
+          <h2>Mientras esperas, juega a Snake</h2>
+          <SnakeGame />
+        </div>
+      </div>
     </div>
   );
 }
